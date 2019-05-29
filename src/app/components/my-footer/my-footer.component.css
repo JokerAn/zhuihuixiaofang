@@ -1,0 +1,37 @@
+#myFooter{
+  border:1px solid #ddd;
+  position: fixed;
+  bottom:0rem;
+  width:100%;
+  padding:0.05rem 0;
+  height:0.56rem;
+  background: #fff;
+  z-index: 2000;
+}
+#myFooter>ul{
+  display:flex;
+  
+}
+#myFooter>ul>li{
+  flex: 1;
+  text-align: center;
+  
+}
+#myFooter>ul>li img{
+  width:0.24rem;
+  height:0.24rem;
+  
+}
+#myFooter>ul>li.centerImg div{
+  width:0.46rem;height:0.46rem;
+  border-radius: 50%;
+  background:green;
+  line-height: 0.52rem;
+  display: inline-block;
+
+}
+#myFooter>ul>li.centerImg div img{
+  width:0.26rem;height:0.26rem;
+  margin: 0.1rem auto;
+  
+}

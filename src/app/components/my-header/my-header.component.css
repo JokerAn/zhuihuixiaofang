@@ -1,0 +1,14 @@
+#myHeader{
+  border-bottom:1px solid #ddd;
+  text-align: center;
+  position: relative;
+  height:0.25rem;
+  background:#fff;
+  line-height: 0.4rem;
+  height: 0.4rem;
+}
+#myHeader span{
+  position:absolute;
+  top:0rem;
+  left:0.1rem;
+}

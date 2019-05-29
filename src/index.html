@@ -1,14 +1,29 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Zhihuixiaofang</title>
   <base href="/">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width,
+      initial-scale=1.0, minimum-scale=1, maximum-scale=2, user-scalable=yes">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script type="text/javascript"
+    src="https://webapi.amap.com/maps?v=1.4.13&key=f1a8b4718d8031066fe77330cd1532df"></script>
+  <script>
+    function rems() {
+      var html = document.getElementsByTagName('html')[0];
+      var w = document.documentElement.clientWidth || document.body.clientWidth;
+      html.style.fontSize = w / 3.75 + "px";
+    }
+    rems();
+    window.addEventListener('resize', rems, false);
+  </script>
 </head>
+
 <body>
   <app-root></app-root>
 </body>
+
 </html>
