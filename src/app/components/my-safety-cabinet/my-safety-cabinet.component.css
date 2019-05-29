@@ -1,0 +1,35 @@
+#mySafetyCabinet{
+  text-align: center
+}
+#mySafetyCabinet>p{
+  width:3.38rem;
+  height:0.5rem;
+  line-height: 0.5rem;
+  border-bottom:1px solid #ddd;
+  display: inline-block;
+  text-align: left;
+}
+#mySafetyCabinet>p>i{
+  width:0.08rem;
+  height:0.08rem;
+  background: #ddd;
+  border-radius: 50%;
+  float:left;
+  position: relative;
+  top:0.19rem;
+  margin-right: 0.15rem;
+}
+#mySafetyCabinet>p>b{
+      width: 0.28rem;
+    height: 0.17rem;
+    background: #ddd;
+    line-height: 0.17rem;
+    text-align: center;
+    margin-top: 0.12rem;
+    font-weight: 400;
+    margin-right: 0.1rem;
+}
+#mySafetyCabinet>p>a{
+    color:#aaa;
+    width:0.3rem;
+}

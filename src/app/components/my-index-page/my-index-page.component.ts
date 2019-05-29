@@ -32,5 +32,8 @@ export class MyIndexPageComponent implements OnInit {
     })
     this.map.add(marker);//添加到地图
   }
+  openAll() { 
+    this.anData.alertMsgShowF('全部打开成功')
+  }
 
 }

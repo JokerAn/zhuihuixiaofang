@@ -11,6 +11,7 @@ export class MyHomeComponent implements OnInit {
   constructor(private anData:AnDataService) { }
 
   ngOnInit() {
+    this.anData.headerName='主页';
     this.anData.headerShow(true);
     this.anData.footerShow(false);
   }
@@ -19,5 +20,8 @@ export class MyHomeComponent implements OnInit {
    }
   callHelp() {
     console.log('呼救')
-   }
+  }
+  selectSafetyCabinet() { 
+    
+  }
 }

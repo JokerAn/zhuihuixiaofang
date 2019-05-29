@@ -14,4 +14,29 @@ export class AnDataService {
   public headerShow(res:any) { 
     this.headerTag = res;
   }
+  isAdmin = false;
+  isAdminF() { 
+    let urls = location.href;
+    console.log(urls);
+    console.log(urls.includes('admin'));
+    if (urls.includes('admin')) {
+      this.isAdmin = true;
+    } else {
+      this.isAdmin = false;
+    }
+  }
+  headerName = '';
+  guestSafeguardShow = false;
+  guestSafeguardShowF(res:any) { 
+    this.guestSafeguardShow = res;
+  };
+  alertMsg = '';
+  alertMsgShow = false;
+  alertMsgShowF(res) { 
+    this.alertMsg = res;
+    this.alertMsgShow = true;
+    setTimeout(() => {
+      this.alertMsgShow=false
+    },1500)
+  }
 }

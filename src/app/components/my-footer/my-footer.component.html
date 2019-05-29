@@ -4,15 +4,26 @@
       <img [src]="name1Img" alt="">
       <p>{{name1}}</p>
     </li>
-    <li [routerLink]="['/message']">
+    <li *ngIf="!anData.isAdmin" [routerLink]="['/message']">
       <img [src]="name2Img" alt="">
       <p>{{name2}}</p>
     </li>
-    <li class='centerImg'>
+    <li *ngIf="anData.isAdmin" [routerLink]="['/control']">
+      <img [src]="name2Img" alt="">
+      <p>{{name22}}</p>
+    </li>
+
+    <li *ngIf="!anData.isAdmin" class='centerImg' (click)='showGuest()'>
       <div>
         <img [src]="name3Img" alt="">
       </div>
     </li>
+    <li *ngIf="anData.isAdmin" class='centerImg'>
+      <div>
+        <img [src]="name33Img" alt="">
+      </div>
+    </li>
+    
     <li [routerLink]="['/mutualAid']">
       <img [src]="name4Img" alt="">
       <p>{{name4}}</p>

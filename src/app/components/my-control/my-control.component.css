@@ -1,0 +1,46 @@
+.topBox{
+  padding:0.1rem 0.2rem;
+}
+#myControl b{
+  width:0.22rem;
+  height:0.22rem;
+  border:1px solid #ddd;
+  display: inline-block;
+  vertical-align: middle;
+}
+#myControl span{
+  color:#777;
+  margin:0 0.35rem 0 0.1rem;
+}
+.topBox a{
+  width: 0.92rem;
+  height:0.26rem;
+  background: #ddd;
+  line-height: 0.26rem;
+  text-align: center;
+  display: inline-block;
+  margin-right: 0.05rem;
+}
+.topBox i{
+  width:0.18rem;
+  height:0.18rem;
+  border:1px solid #ddd;
+  display: inline-block;
+  vertical-align: middle;
+}
+.contentBox{
+  width:3.4rem;
+  margin:0.2rem auto;
+  padding:0.07rem 0.05rem;
+  border:1px solid #ddd;
+  border-radius: 0.04rem;
+}
+.contentBox a{
+  float: right;
+  width: 0.49rem;
+  height:0.26rem;
+  background: #ddd;
+  line-height: 0.26rem;
+  text-align: center;
+  margin-left: 0.1rem;
+}

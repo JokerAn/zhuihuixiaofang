@@ -15,15 +15,36 @@
     <p>加好友</p>
     <div>
       <ul>
-        <li *ngFor="let item of relativeList">
+        <li *ngFor="let item of addFriendList">
           <img [src]="item.imgUrl" alt="">
           <p class="textCenter">{{item.typeName}}</p>
         </li>
       </ul>
     </div>
   </div>
-  <div  class='phone'>
+  <div class='phone'>
     <p>通讯录</p>
-    <div></div>
+    <div>
+      <p class='inputSearch'>
+        <b></b>
+        <input type="text" placeholder="请输入手机号搜索">
+      </p>
+      <div class='openUserNamber'>
+        打开通讯录
+      </div>
+      <ul class="anclear" [ngClass]="{'borderTop': index==0}" *ngFor="let item of phoneNameList;let index=index">
+        <li>
+          <img [src]="item.imgUrl" alt="">
+        </li>
+        <li>
+          <h5>{{item.userName}}</h5>
+          <h6>在金融街长安中心求助。</h6>
+        </li>
+        <li>
+          <a *ngIf='item.finish'>帮助</a>
+          <span *ngIf='!item.finish'>已回应</span>
+        </li>
+      </ul>
+    </div>
   </div>
 </div>

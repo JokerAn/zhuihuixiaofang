@@ -10,4 +10,7 @@ export class AppComponent {
   title = 'zhihuixiaofang';
   constructor(public anData:AnDataService) { 
   }
+  close() { 
+    this.anData.guestSafeguardShowF(false);
+  }
 }

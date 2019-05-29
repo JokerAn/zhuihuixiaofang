@@ -1,4 +1,42 @@
 <app-my-header [hidden]='!anData.headerTag'></app-my-header>
-
 <router-outlet></router-outlet>
 <app-my-footer [hidden]='!anData.footerTag'></app-my-footer>
+<div id='guestSafeguard' *ngIf="anData.guestSafeguardShow">
+  <div class='topContent'>
+    <p><b></b>安全求助服务<b></b></p>
+    <ul>
+      <li>
+        <b></b>
+        <p class='textCenter'>周边呼救</p>
+      </li>
+      <li>
+        <b></b>
+        <p class='textCenter'>呼叫安全员</p>
+      </li>
+      <li>
+        <b></b>
+        <p class='textCenter'>呼叫亲友</p>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <b></b>
+        <p class='textCenter'>120</p>
+      </li>
+      <li>
+        <b></b>
+        <p class='textCenter'>119</p>
+      </li>
+      <li>
+        <b></b>
+        <p class='textCenter'>110</p>
+      </li>
+    </ul>
+  </div>
+  <div class='textCenter'>
+    <span (click)=close()></span>
+  </div>
+</div>
+<div id='alertMsg' class='goodposition' *ngIf="anData.alertMsgShow">
+  <span>{{anData.alertMsg}}</span>
+</div>

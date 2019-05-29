@@ -1,0 +1,13 @@
+<div id='myControl'>
+  <div class='topBox'>
+    <b></b><span>金融街长安中心26号院</span><a (click)="openAll()">一键全开</a><i></i>
+  </div>
+  <div class='contentBox' *ngFor="let item of guiziList">
+    <p class="anclear">
+      <b></b><span>{{item.name}}</span>
+      <a (click)="openKaiGui(item)">开柜</a>
+      <a (click)="openJianKong(item)">监控</a>
+      <a (click)="openWiZhi(item)" style="margin-left:0;">物质</a>
+    </p>
+  </div>
+</div>

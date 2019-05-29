@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { hasQuanXian } from './routerCanActive';
+import { AnHttpService } from './services/an-http.service';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -12,6 +14,8 @@ import { MyIndexPageComponent } from './components/my-index-page/my-index-page.c
 import { MyUserInfoComponent } from './components/my-user-info/my-user-info.component';
 import { MyMessageComponent } from './components/my-message/my-message.component';
 import { MyMutualAidComponent } from './components/my-mutual-aid/my-mutual-aid.component';
+import { MyControlComponent } from './components/my-control/my-control.component';
+import { MySafetyCabinetComponent } from './components/my-safety-cabinet/my-safety-cabinet.component';
 
 @NgModule({
   declarations: [
@@ -22,13 +26,15 @@ import { MyMutualAidComponent } from './components/my-mutual-aid/my-mutual-aid.c
     MyIndexPageComponent,
     MyUserInfoComponent,
     MyMessageComponent,
-    MyMutualAidComponent
+    MyMutualAidComponent,
+    MyControlComponent,
+    MySafetyCabinetComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [
+  providers: [hasQuanXian, AnHttpService,
     { provide: LocationStrategy, useClass: HashLocationStrategy }
   ],
   bootstrap: [AppComponent]
