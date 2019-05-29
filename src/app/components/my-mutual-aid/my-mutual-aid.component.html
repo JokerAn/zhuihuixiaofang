@@ -1,0 +1,29 @@
+<div id='myMulutalAid'>
+  <div class='relative'>
+    <p>互助的亲友</p>
+    <ul>
+      <li *ngFor="let item of relativeList">
+        <img [src]="item.imgUrl" alt="">
+        <p class="textCenter">{{item.typeName}}</p>
+      </li>
+      <li>
+        <b>+</b>
+      </li>
+    </ul>
+  </div>
+  <div class='friend'>
+    <p>加好友</p>
+    <div>
+      <ul>
+        <li *ngFor="let item of relativeList">
+          <img [src]="item.imgUrl" alt="">
+          <p class="textCenter">{{item.typeName}}</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div  class='phone'>
+    <p>通讯录</p>
+    <div></div>
+  </div>
+</div>

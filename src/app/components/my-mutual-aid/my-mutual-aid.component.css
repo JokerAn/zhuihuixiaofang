@@ -1,0 +1,35 @@
+#myMulutalAid{
+  padding:0.2rem;
+}
+#myMulutalAid>div>p{
+  font-size: 0.12rem;
+  color:#aaa;
+  margin-bottom:0.1rem;
+}
+.relative,.friend{
+  height:0.9rem;
+}
+.relative li{
+  float:left;
+  width:0.4rem;
+  text-align: center;
+  margin-right:0.3rem;
+}
+.relative img,.friend img{
+  width: 0.34rem;
+  height: 0.34rem;
+  border-radius: 50%;
+}
+.relative li b{
+  width: 0.34rem;
+  height: 0.34rem;
+  border-radius: 50%;
+  background: #bbb;·
+  display: inline-block;
+  line-height: 0.3rem;
+}
+.friend li{
+  float:left;
+  width:33.333%;
+  text-align: center;
+}

@@ -1,0 +1,45 @@
+#myMessage{
+  padding-top:0.2rem;
+}
+#myMessage>div{
+  width:3.35rem;
+  height:1.41rem;
+  padding:0.1rem 0.17rem;
+  border:1px solid #999;
+  margin:0.3rem auto;
+}
+#myMessage>div>p{
+ padding:0.08rem 0;
+ font-size: 0.16rem;
+ font-weight: 700;
+}
+#myMessage>div>p span{
+ float: right;
+ color:#aaa;
+ font-weight: 400;
+ font-size: 0.12rem;
+}
+#myMessage>div>ul li{ 
+ float:left;
+ height:0.84rem;
+}
+#myMessage>div>ul li:first-child{ 
+ width:1.25rem;
+}
+#myMessage>div>ul li:last-child{ 
+ width:1.7rem;
+}
+#myMessage>div>ul li:first-child img{ 
+ width:1.08rem;height:0.8rem;
+ display: inline-block;
+ background: #999;
+ margin-top: 0.02rem;
+}
+#myMessage>div>ul li h5{ 
+  font-weight: 400;
+  margin-bottom: 0.3rem;
+}
+#myMessage>div>ul li h6{ 
+  font-weight: 400;
+  color:#aaa;
+}
