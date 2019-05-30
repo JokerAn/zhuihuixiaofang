@@ -16,10 +16,24 @@
   text-align: center;
   margin-right:0.3rem;
 }
-.relative img,.friend img{
+.relative img{
   width: 0.34rem;
   height: 0.34rem;
   border-radius: 50%;
+  
+}
+.friend li span{
+  width: 0.34rem;
+  height: 0.34rem;
+  border-radius: 50%;
+  display: inline-block;
+  border:1px solid #aaa;
+}
+.friend li span img{
+     width: 0.24rem;
+    height: 0.24rem;
+    display: inline-block;
+    margin-top: 0.05rem;
 }
 .relative li b{
   width: 0.34rem;
@@ -41,11 +55,12 @@
 .inputSearch b{
   width:0.18rem;
   height:0.18rem;
-  border:1px solid #aaa;
   position: absolute;
   display: inline-block;
   top: 0.07rem;
   left: 0.15rem;
+  background: url('/assets/imgs/mutualAid/suosou.png')no-repeat center center;
+  background-size: 86%;
 }
 .inputSearch input{
   width:100%;

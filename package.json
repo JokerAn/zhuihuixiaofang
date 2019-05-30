@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve --port 6868 -o",
     "build": "ng build",
-    "build2": "ng build --configuration=production --base-href /",
+    "build2": "ng build --configuration=production --base-href /zhihuixiaofang/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

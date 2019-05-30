@@ -1,16 +1,16 @@
 <div id="myFooter">
   <ul>
-    <li [routerLink]="['/index']">
-      <img [src]="name1Img" alt="">
-      <p>{{name1}}</p>
+    <li (click)="gotoPage(shouye)">
+      <img *ngIf='!shouye.checked' [src]="shouye.name1Img" alt="">
+      <img *ngIf='shouye.checked' [src]="shouye.name1ImgActive" alt="">
     </li>
-    <li *ngIf="!anData.isAdmin" [routerLink]="['/message']">
-      <img [src]="name2Img" alt="">
-      <p>{{name2}}</p>
+    <li *ngIf="!anData.isAdmin"  (click)="gotoPage(huzhu)">
+      <img *ngIf='!huzhu.checked' [src]="huzhu.name2Img" alt="">
+      <img *ngIf='huzhu.checked' [src]="huzhu.name2ImgActive" alt="">
     </li>
-    <li *ngIf="anData.isAdmin" [routerLink]="['/control']">
-      <img [src]="name2Img" alt="">
-      <p>{{name22}}</p>
+    <li *ngIf="anData.isAdmin"  (click)="gotoPage(kongzhi)">
+      <img *ngIf='!kongzhi.checked' [src]="kongzhi.name22Img" alt="">
+      <img *ngIf='kongzhi.checked' [src]="kongzhi.name22ImgActive" alt="">
     </li>
 
     <li *ngIf="!anData.isAdmin" class='centerImg' (click)='showGuest()'>
@@ -24,13 +24,13 @@
       </div>
     </li>
     
-    <li [routerLink]="['/mutualAid']">
-      <img [src]="name4Img" alt="">
-      <p>{{name4}}</p>
+    <li  (click)="gotoPage(xiaoxi)">
+      <img *ngIf='!xiaoxi.checked' [src]="xiaoxi.name4Img" alt="">
+      <img *ngIf='xiaoxi.checked' [src]="xiaoxi.name4ImgActive" alt="">
     </li>
-    <li [routerLink]="['/userInfo']">
-      <img [src]="name5Img" alt="">
-      <p>{{name5}}</p>
+    <li  (click)="gotoPage(wode)">
+      <img *ngIf='!wode.checked' [src]="wode.name5Img" alt="">
+      <img *ngIf='wode.checked' [src]="wode.name5ImgActive" alt="">
     </li>
   </ul>
 </div>

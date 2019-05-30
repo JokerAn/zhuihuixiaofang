@@ -37,3 +37,13 @@
   line-height: 0.4rem;
   background: #ddd;
 }
+.positionInfo>p b{
+      width: 0.12rem;
+    height: 0.12rem;
+  display: inline-block;
+  background: url('/assets/imgs/jiantou.png')no-repeat;
+    background-position: 0 0px;
+    background-size: 100%;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}

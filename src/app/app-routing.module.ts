@@ -9,7 +9,7 @@ import { MyMutualAidComponent } from './components/my-mutual-aid/my-mutual-aid.c
 import { MyControlComponent } from './components/my-control/my-control.component';
 import { MySafetyCabinetComponent } from './components/my-safety-cabinet/my-safety-cabinet.component';
 
-const routes: Routes = [
+export const appRoutes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: MyHomeComponent, canActivate: [hasQuanXian] },
   { path: 'index', component: MyIndexPageComponent, canActivate: [hasQuanXian]},
@@ -20,9 +20,3 @@ const routes: Routes = [
   { path: 'safetyCabinet', component: MySafetyCabinetComponent, canActivate: [hasQuanXian] },
   { path: '**', component: MyHomeComponent },
 ];
-
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
-export class AppRoutingModule { }

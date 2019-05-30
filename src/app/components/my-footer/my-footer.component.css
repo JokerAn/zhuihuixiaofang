@@ -15,12 +15,10 @@
 #myFooter>ul>li{
   flex: 1;
   text-align: center;
-  
 }
 #myFooter>ul>li img{
-  width:0.24rem;
-  height:0.24rem;
-  
+  width: 0.29rem;
+  height: 0.46rem;
 }
 #myFooter>ul>li.centerImg div{
   width:0.46rem;height:0.46rem;

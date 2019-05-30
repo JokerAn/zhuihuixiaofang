@@ -4,9 +4,10 @@
 #myControl b{
   width:0.22rem;
   height:0.22rem;
-  border:1px solid #ddd;
   display: inline-block;
   vertical-align: middle;
+  background: url('/assets/imgs/mutualAid/tu.png')no-repeat center center;
+  background-size: 78%;
 }
 #myControl span{
   color:#777;
@@ -24,9 +25,16 @@
 .topBox i{
   width:0.18rem;
   height:0.18rem;
-  border:1px solid #ddd;
   display: inline-block;
   vertical-align: middle;
+  background: url('/assets/imgs/jiantou.png')no-repeat;
+  background-position: 0 -0.26rem;
+  background-size: 100%;
+}
+#myControl .topBox>b{
+  background: url('/assets/imgs/weizhi.png')no-repeat;
+  background-position: 0 -0.32rem;
+  background-size: 100%;
 }
 .contentBox{
   width:3.4rem;

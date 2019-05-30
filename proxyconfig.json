@@ -1,0 +1,9 @@
+
+{
+  "/api": {
+    "target": "https: //www.iqcspace.com/release",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  }
+}

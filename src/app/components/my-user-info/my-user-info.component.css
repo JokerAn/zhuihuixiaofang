@@ -10,11 +10,11 @@
   line-height: 0.41rem;
 }
 #myUserInfo .shezheIcon span{
- width:0.39rem;
- height:0.39rem;
+ width:0.29rem;
+ height:0.29rem;
  float: right;
- background: url('/assets/imgs/shezhiIcon.jpg')no-repeat center center;
-
+ background: url('/assets/imgs/wode/shezhi.png')no-repeat center center;
+background-size:100%; 
 }
 #myUserInfo .userInfo{
  height:1.15rem;
@@ -35,7 +35,8 @@
  top:-0.28rem;
  left:1.37rem;
  z-index: 1;
- background: url('/assets/imgs/shezhiIcon.jpg')no-repeat center center;
+ overflow: hidden;
+ /* background: url('/assets/imgs/shezhiIcon.jpg')no-repeat center center; */
 }
 #myUserInfo .userInfo h5{
   font-size: 0.15rem;
@@ -69,6 +70,24 @@
   background-size: 100%;
   vertical-align: middle;
 }
+.threeBtn li:nth-child(2) i{
+  display: inline-block;
+  width:0.14rem;
+  height:0.14rem;
+  margin-right: 0.05rem;
+  background: url('/assets/imgs/wode/jinjilianxiren.png')no-repeat 0 0;
+  background-size: 100%;
+  vertical-align: middle;
+}
+.threeBtn li:nth-child(3) i{
+  display: inline-block;
+  width:0.14rem;
+  height:0.14rem;
+  margin-right: 0.05rem;
+  background: url('/assets/imgs/wode/dangan.png')no-repeat 0 0;
+  background-size: 100%;
+  vertical-align: middle;
+}
 div.saveEdurp{
   margin-top:0.25rem;
 }
@@ -81,4 +100,16 @@ div.saveEdurp{
   font-size: 0.16rem;
   color:#666;
   padding:0 0.12rem;
+}
+.saveEdurp i,.saveFree i{
+  width:0.16rem;
+  height:0.16rem;
+  
+  margin-top:0.18rem;
+  line-height: 0.49rem;
+  box-sizing: border-box;
+  background: url('/assets/imgs/jiantou.png')no-repeat;
+    background-position: 0 0px;
+    background-size: 100%;
+    transform: rotate(180deg);
 }

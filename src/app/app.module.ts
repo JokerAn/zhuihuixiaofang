@@ -1,11 +1,15 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
+
 import { hasQuanXian } from './routerCanActive';
 import { AnHttpService } from './services/an-http.service';
+import { EmmitAlertService } from './services/emmit-alert.service';
+import { RouterModule } from '@angular/router';
 
 
-import { AppRoutingModule } from './app-routing.module';
+import { appRoutes } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MyHeaderComponent } from './components/my-header/my-header.component';
 import { MyFooterComponent } from './components/my-footer/my-footer.component';
@@ -32,9 +36,10 @@ import { MySafetyCabinetComponent } from './components/my-safety-cabinet/my-safe
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    RouterModule.forRoot(appRoutes, { useHash: true }),
+    HttpClientModule
   ],
-  providers: [hasQuanXian, AnHttpService,
+  providers: [hasQuanXian, AnHttpService, EmmitAlertService,
     { provide: LocationStrategy, useClass: HashLocationStrategy }
   ],
   bootstrap: [AppComponent]

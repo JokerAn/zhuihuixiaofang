@@ -18,6 +18,16 @@
   position: relative;
   top:0.19rem;
 }
+.homeTopSelect>p>b{
+      background: url(/assets/imgs/jiantou.png)no-repeat;
+    background-position: 0 0px;
+    background-size: 100%;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    width: 0.14rem;
+    height: 0.14rem;
+    margin-top: 0.15rem;
+}
 .centerBox{
   width:2.63rem;
   margin:0.5rem 0.57rem;
@@ -30,16 +40,17 @@
   flex: 1;
   text-align: center;
 }
-.threeBtn li img{
-  flex: 1;
-  text-align: center;
-  width:0.1rem;
-  height:0.1rem;
-  border:1px solid red;
-  display: inline-block;
-  position: relative;
-  top:0.01rem;
-  margin-right:0.05rem;
+.threeBtn li i{
+      flex: 1;
+    text-align: center;
+    width: 0.1rem;
+    height: 0.1rem;
+    border: 1px solid red;
+    display: inline-block;
+    position: relative;
+    top: 0;
+    margin-right: 0.05rem;
+    line-height: 0.07rem;
 }
 
 .fourBtn{
@@ -54,9 +65,10 @@
   box-sizing: border-box;
 }
 .fourBtn>div img{
-  width:0.4rem;;
-  height:0.4rem;
-  margin:0.27rem auto;
+      width: 0.4rem;
+    height: 0.4rem;
+    margin: 0.27rem auto;
+    margin-bottom: 0;
 }
 .fourBtn>div p{
   margin-top:0.16rem;
@@ -132,4 +144,19 @@
   width:0.39rem;
   height:0.39rem;
   
+}
+.mishu{
+  color:#999;
+  font-weight: normal;
+  transform: scale(0.8);
+      display: inline-block;
+}
+.weizhi{
+  width:0.12rem;
+  height:0.12rem;
+  display: inline-block;
+  background: url('/assets/imgs/weizhi.png')no-repeat;
+  background-position: 0 0;
+  background-size: 75%;
+      margin-left: 0.1rem;
 }
