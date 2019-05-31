@@ -2,7 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { AnDataService } from 'src/app/services/an-data.service';
 import { AnHttpService } from 'src/app/services/an-http.service';
 import { EmmitAlertService } from 'src/app/services/emmit-alert.service';
-
+import {
+  HttpClient, HttpParams, HttpHeaders, HttpErrorResponse, HttpEvent,
+  HttpRequest, HttpInterceptor, HttpEventType
+}
+  from '@angular/common/http';
 @Component({
   selector: 'app-my-home',
   templateUrl: './my-home.component.html',
@@ -12,7 +16,8 @@ export class MyHomeComponent implements OnInit {
 
   constructor(private anData: AnDataService,
      public anHttp: AnHttpService,
-     public emmitAlert: EmmitAlertService
+    public emmitAlert: EmmitAlertService,
+    private http: HttpClient
   ) { }
 
   ngOnInit() {
@@ -22,8 +27,15 @@ export class MyHomeComponent implements OnInit {
     console.log('我是index');
   }
   openBox(res: any) {
-    console.log(res);
-    this.anHttp.put('https://www.iqcspace.com/release/api-iot/equipment/api/v1/actuator/' + res + '?targetStateId=501&waitForResponse=false')
+    this.anHttp.get('/common/adver-getadver').subscribe((result) => { 
+
+    })
+
+    this.anHttp.post('/search/hotwords', {})
+      .subscribe((result: any) => {
+        this.anData.alertMsgShowF(result.msg);
+      })
+    this.http.put('/release/api-iot/equipment/api/v1/actuator/' + res + '?targetStateId=501&waitForResponse=false', {})
       .subscribe((result: any) => { 
         this.anData.alertMsgShowF(result.msg);
     })

@@ -1,0 +1,12 @@
+
+{
+  "/common": {
+    "target": "http://www.imooc.com/",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/common": ""
+    }
+  }
+}

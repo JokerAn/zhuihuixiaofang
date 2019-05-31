@@ -7,7 +7,7 @@
         <p class="textCenter">{{item.typeName}}</p>
       </li>
       <li>
-        <b>+</b>
+        <b></b>
       </li>
     </ul>
   </div>
@@ -16,7 +16,7 @@
     <div>
       <ul>
         <li *ngFor="let item of addFriendList">
-          <span>
+          <span  [ngStyle]="item.style">
             <img [src]="item.imgUrl" alt="">
           </span>
 
@@ -32,7 +32,7 @@
         <b></b>
         <input type="text" placeholder="请输入手机号搜索">
       </p>
-      <div class='openUserNamber'>
+      <div class='openUserNamber greenP'>
         打开通讯录
       </div>
       <ul class="anclear" [ngClass]="{'borderTop': index==0}" *ngFor="let item of phoneNameList;let index=index">
@@ -44,7 +44,7 @@
           <h6>在金融街长安中心求助。</h6>
         </li>
         <li>
-          <a *ngIf='item.finish'>帮助</a>
+          <a *ngIf='item.finish' class='greenP'>帮助</a>
           <span *ngIf='!item.finish'>已回应</span>
         </li>
       </ul>

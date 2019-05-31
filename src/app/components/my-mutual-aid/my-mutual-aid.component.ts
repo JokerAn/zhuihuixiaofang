@@ -14,9 +14,9 @@ export class MyMutualAidComponent implements OnInit {
     { typeName: '同事', imgUrl: 'https://ss0.baidu.com/73F1bjeh1BF3odCf/it/u=616212579,3789972006&fm=85&s=E43EAC76DBF3E3ED0A4DA16F0300E078' },
   ];
   public addFriendList: any = [
-    { typeName: '微信', imgUrl:'./assets/imgs/mutualAid/weixin.png'},
-    { typeName: 'QQ', imgUrl:'./assets/imgs/mutualAid/qq.png'},
-    { typeName: '二维码', imgUrl:'./assets/imgs/mutualAid/qrcode.png'},
+    { typeName: '微信', imgUrl: './assets/imgs/mutualAid/weixin.png', style: {width:'0.5rem'}},
+    { typeName: 'QQ', imgUrl: './assets/imgs/mutualAid/qq.png', style: { width: '0.34rem' }},
+    { typeName: '二维码', imgUrl: './assets/imgs/mutualAid/qrcode.png', style: { width: '0.4rem' }},
   ]
   public phoneNameList: any = [
     {
@@ -33,7 +33,8 @@ export class MyMutualAidComponent implements OnInit {
   constructor(private anData: AnDataService, private emmitAlert:EmmitAlertService) { }
 
   ngOnInit() {
-    this.anData.headerShow(false);
+    this.anData.headerName = '互助';
+    this.anData.headerShow(true);
     this.anData.footerShow(true);
     this.emmitAlert.send({ id: 'footerChange', data: 'huzhu' })
   }

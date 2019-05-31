@@ -12,8 +12,9 @@ export class MyUserInfoComponent implements OnInit {
   constructor(public anData: AnDataService, private emmitAlert: EmmitAlertService) { }
 
   ngOnInit() {
+    this.anData.headerName = '我的';
     this.anData.footerShow(true);
-    this.anData.headerShow(false);
+    this.anData.headerShow(true);
     this.emmitAlert.send({ id: 'footerChange', data: 'wode' });
   }
 

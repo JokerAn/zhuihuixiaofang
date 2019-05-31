@@ -38,5 +38,6 @@ export class AnDataService {
     setTimeout(() => {
       this.alertMsgShow=false
     },1500)
-  }
+  };
+  anhuancun: any = (+(new Date()) + '').slice(0, 6);
 }

@@ -7,6 +7,7 @@
   height:0.56rem;
   background: #fff;
   z-index: 2000;
+  padding-top: 0.08rem;
 }
 #myFooter>ul{
   display:flex;
@@ -17,13 +18,13 @@
   text-align: center;
 }
 #myFooter>ul>li img{
-  width: 0.29rem;
-  height: 0.46rem;
+  width: 0.25rem;
+  height: 0.42rem;
 }
 #myFooter>ul>li.centerImg div{
   width:0.46rem;height:0.46rem;
   border-radius: 50%;
-  background:green;
+  /* background:green; */
   line-height: 0.52rem;
   display: inline-block;
 
@@ -31,5 +32,11 @@
 #myFooter>ul>li.centerImg div img{
   width:0.26rem;height:0.26rem;
   margin: 0.1rem auto;
+  
+}
+#myFooter>ul>li.centerImg div img.centerimgg{
+    width: 0.46rem;
+    height: 0.46rem;
+    margin-top: 0;
   
 }

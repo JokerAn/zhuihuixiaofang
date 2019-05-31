@@ -10,17 +10,17 @@
   background-size: 78%;
 }
 #myControl span{
-  color:#777;
   margin:0 0.35rem 0 0.1rem;
 }
 .topBox a{
+  color:#fff;
   width: 0.92rem;
   height:0.26rem;
-  background: #ddd;
   line-height: 0.26rem;
   text-align: center;
   display: inline-block;
-  margin-right: 0.05rem;
+  margin-right: 0.15rem;
+  border-radius: 0.02rem;
 }
 .topBox i{
   width:0.18rem;
@@ -30,6 +30,7 @@
   background: url('/assets/imgs/jiantou.png')no-repeat;
   background-position: 0 -0.26rem;
   background-size: 100%;
+  transform: scale(0.6);
 }
 #myControl .topBox>b{
   background: url('/assets/imgs/weizhi.png')no-repeat;
@@ -47,8 +48,15 @@
   float: right;
   width: 0.49rem;
   height:0.26rem;
-  background: #ddd;
   line-height: 0.26rem;
   text-align: center;
   margin-left: 0.1rem;
+  border-radius: 0.02rem;
+  color:#fff;
+}
+.jiankong{
+  background: #2676ee;
+}
+.kaigui{
+  background: #ff5d63;
 }

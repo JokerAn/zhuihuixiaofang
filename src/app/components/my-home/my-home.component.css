@@ -3,29 +3,32 @@
   text-align: center;
 }
 .homeTopSelect>p{
-  width:3.04rem;
+  width:3.48rem;
   height:0.4rem;
   line-height: 0.4rem;
   border-bottom:1px solid #ddd;
   display: inline-block;
+  text-align: left;
 }
-.homeTopSelect>p>i{
-  width:0.08rem;
-  height:0.08rem;
-  background: #ddd;
-  border-radius: 50%;
+.homeTopSelect>p>i{  
   float:left;
   position: relative;
-  top:0.19rem;
+  top:0.11rem;
+  margin-right: 0.05rem;
+}
+.homeTopSelect>p>span{  
+  color: #333;
+  font-size: 0.13rem;
+}
+.homeTopSelect>p>span span{  
+  color: #666;
+  font-size: 0.13rem;
 }
 .homeTopSelect>p>b{
-      background: url(/assets/imgs/jiantou.png)no-repeat;
-    background-position: 0 0px;
+    background: url(/assets/imgs/jiantou_r.png)no-repeat center center;
     background-size: 100%;
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-    width: 0.14rem;
-    height: 0.14rem;
+    width: 0.06rem;
+    height: 0.1rem;
     margin-top: 0.15rem;
 }
 .centerBox{
@@ -41,16 +44,29 @@
   text-align: center;
 }
 .threeBtn li i{
-      flex: 1;
+    flex: 1;
     text-align: center;
-    width: 0.1rem;
-    height: 0.1rem;
-    border: 1px solid red;
+    width: 0.13rem;
+    height: 0.14rem;
     display: inline-block;
     position: relative;
-    top: 0;
+    top: 0.02rem;
     margin-right: 0.05rem;
     line-height: 0.07rem;
+    background: url(/assets/imgs/baojing.png)no-repeat center center;
+    background-size: 100%;
+}
+.threeBtn li:nth-child(2) i{
+  width: 0.08rem;
+    height: 0.13rem;
+    background: url(/assets/imgs/hujiu.png)no-repeat center center;
+    background-size: 100%;
+}
+.threeBtn li:nth-child(3) i{
+   width: 0.11rem;
+    height: 0.12rem;
+    background: url(/assets/imgs/lianxiren.png)no-repeat center center;
+    background-size: 100%;
 }
 
 .fourBtn{
@@ -72,14 +88,18 @@
 }
 .fourBtn>div p{
   margin-top:0.16rem;
+  font-size: 0.13rem;
+  color:#333;
 }
 .fourBtn>div a{
   margin-top:0.06rem;
-  border:1px solid red;
+  background:#f39419;
+  color:#fff;
   width:0.6rem;
   height:0.2rem;
   line-height: 0.2rem;
   display: inline-block;
+  border-radius: 0.02rem;
 }
 .fourBtn>div:first-child{
   border-right: none;
@@ -93,10 +113,10 @@
 }
 .centerBox>p{
   margin-top:0.15rem;
-  color:#aaa;
+  color:#999;
 }
 .saveEmpolyee{
-  width:3.04rem;
+  width:3.48rem;
   height:0.43rem;
   border-top:1px solid #ddd;
   border-bottom:1px solid #ddd;
@@ -120,9 +140,15 @@
 .saveEmpolyee li:nth-child(2) h3{ 
   font-size:0.12rem;
   margin-bottom: 0.1rem;
+  font-weight: normal
+  
+}
+.saveEmpolyee li:nth-child(2) h3 a{ 
+  font-weight: 500;
+  
 }
 .saveEmpolyee li:nth-child(2) p{ 
-  color:#aaa;
+  color:#666;
    font-size:0.12rem;
 }
 .saveEmpolyee li:nth-child(3){ 
@@ -132,13 +158,14 @@
 .saveEmpolyee li:nth-child(3) a{ 
   width:0.6rem;
   height:0.2rem;
-  border:1px solid #ddd;
   text-align: center;
   line-height: 0.2rem;
   display: inline-block;
   position: relative;
   top: 0.1rem;
-  
+  background: #f39419;
+  border-radius: 0.02rem;
+  color:#fff;
 }
 .saveEmpolyee li img{ 
   width:0.39rem;
@@ -152,11 +179,6 @@
       display: inline-block;
 }
 .weizhi{
-  width:0.12rem;
-  height:0.12rem;
   display: inline-block;
-  background: url('/assets/imgs/weizhi.png')no-repeat;
-  background-position: 0 0;
-  background-size: 75%;
-      margin-left: 0.1rem;
+  margin-left: 0.1rem;
 }

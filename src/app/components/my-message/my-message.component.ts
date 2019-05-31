@@ -12,8 +12,9 @@ export class MyMessageComponent implements OnInit {
   constructor(private anData: AnDataService, private emmitAlert: EmmitAlertService) { }
 
   ngOnInit() {
+    this.anData.headerName='消息';
     this.anData.footerShow(true);
-    this.anData.headerShow(false);
+    this.anData.headerShow(true);
     this.emmitAlert.send({ id: 'footerChange', data: 'xiaoxi' });
   }
 
