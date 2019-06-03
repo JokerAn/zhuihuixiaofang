@@ -27,16 +27,11 @@ export class MyHomeComponent implements OnInit {
     console.log('我是index');
   }
   openBox(res: any) {
-    this.anHttp.get('/common/adver-getadver').subscribe((result) => { 
 
-    })
 
-    this.anHttp.post('/search/hotwords', {})
-      .subscribe((result: any) => {
-        this.anData.alertMsgShowF(result.msg);
-      })
-    this.http.put('/release/api-iot/equipment/api/v1/actuator/' + res + '?targetStateId=501&waitForResponse=false', {})
+    this.anHttp.get('https://uatapi.iqcspace.com/api-client/front/equipment/v2/actuator/' + res + '/501?waitForResponse=false', {})
       .subscribe((result: any) => { 
+        console.log(result);
         this.anData.alertMsgShowF(result.msg);
     })
    }
