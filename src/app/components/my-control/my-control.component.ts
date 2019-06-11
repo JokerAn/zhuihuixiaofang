@@ -28,21 +28,24 @@ export class MyControlComponent implements OnInit {
     //       this.anData.alertMsgShowF(result.msg);
     //     })
     // }
-    this.anHttp.get('https://api.iqcspace.com/api-client/front/equipment/v2/actuator/' + 'Cabinet-text-all/501?waitForResponse=false', {})
+    let suijishu = +new Date();
+    this.anHttp.get('https://api.iqcspace.com/api-client/front/equipment/v2/actuator/' + 'Cabinet-text-all/501?waitForResponse=false&a='+suijishu, {})
       .subscribe((result: any) => {
         console.log(result);
         this.anData.alertMsgShowF(result.msg);
       })
   }
-  openKaiGui(res:any) { 
-    this.anHttp.get('https://api.iqcspace.com/api-client/front/equipment/v2/actuator/' + res.id + '/501?waitForResponse=false', {})
+  openKaiGui(res: any) { 
+    let suijishu = +new Date();
+    this.anHttp.get('https://api.iqcspace.com/api-client/front/equipment/v2/actuator/' + res.id + '/501?waitForResponse=false&a=' + suijishu, {})
       .subscribe((result: any) => {
         console.log(result);
         this.anData.alertMsgShowF(result.msg);
       })
   }
   openJianKong(res: any) {
-    this.anHttp.get('https://api.iqcspace.com/api-client/front/equipment/v2/actuator/' + res.id  + '/501?waitForResponse=false', {})
+    let suijishu = +new Date();
+    this.anHttp.get('https://api.iqcspace.com/api-client/front/equipment/v2/actuator/' + res.id + '/501?waitForResponse=false&a=' + suijishu, {})
       .subscribe((result: any) => {
         console.log(result);
         this.anData.alertMsgShowF(result.msg);
@@ -50,7 +53,8 @@ export class MyControlComponent implements OnInit {
     
    }
   openWiZhi(res: any) {
-    this.anHttp.get('https://api.iqcspace.com/api-client/front/equipment/v2/actuator/' + res.id  + '/501?waitForResponse=false', {})
+    let suijishu = +new Date();
+    this.anHttp.get('https://api.iqcspace.com/api-client/front/equipment/v2/actuator/' + res.id + '/501?waitForResponse=false&a=' + suijishu, {})
       .subscribe((result: any) => {
         console.log(result);
         this.anData.alertMsgShowF(result.msg);
