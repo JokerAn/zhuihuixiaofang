@@ -29,7 +29,7 @@ export class MyHomeComponent implements OnInit {
   openBox(res: any) {
 
 
-    this.anHttp.get('https://uatapi.iqcspace.com/api-client/front/equipment/v2/actuator/' + res + '/501?waitForResponse=false', {})
+    this.anHttp.get('https://api.iqcspace.com/api-client/front/equipment/v2/actuator/' + res + '/501?waitForResponse=false', {})
       .subscribe((result: any) => { 
         console.log(result);
         this.anData.alertMsgShowF(result.msg);
