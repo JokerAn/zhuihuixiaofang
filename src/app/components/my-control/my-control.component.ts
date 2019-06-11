@@ -12,7 +12,7 @@ export class MyControlComponent implements OnInit {
 
   constructor(public anData: AnDataService, private emmitAlert: EmmitAlertService, private anHttp:AnHttpService) { }
   guiziList: any = [
-    { name: '8号楼12层2号', id: 'Cabinet-text-14' }, { name: '5号楼01层1号', id: 'Cabinet-text-15' }
+    { name: '8号楼11层2号', id: 'Cabinet-text-09' }, { name: '5号楼01层1号', id: 'Cabinet-text-10' }
   ]
   ngOnInit() {
     this.anData.headerName='控制';
@@ -21,13 +21,18 @@ export class MyControlComponent implements OnInit {
     this.emmitAlert.send({ id: 'footerChange', data: 'kongzhi' });
   }
   openAll() { 
-    for (let i = 10; i < 16; i++) {
-      this.anHttp.get('https://uatapi.iqcspace.com/api-client/front/equipment/v2/actuator/' + 'Cabinet-text-'+i + '/501?waitForResponse=false', {})
-        .subscribe((result: any) => {
-          console.log(result);
-          this.anData.alertMsgShowF(result.msg);
-        })
-    }
+    // for (let i = 10; i < 16; i++) {
+    //   this.anHttp.get('https://uatapi.iqcspace.com/api-client/front/equipment/v2/actuator/' + 'Cabinet-text-'+i + '/501?waitForResponse=false', {})
+    //     .subscribe((result: any) => {
+    //       console.log(result);
+    //       this.anData.alertMsgShowF(result.msg);
+    //     })
+    // }
+    this.anHttp.get('https://uatapi.iqcspace.com/api-client/front/equipment/v2/actuator/' + 'Cabinet-text-all/501?waitForResponse=false', {})
+      .subscribe((result: any) => {
+        console.log(result);
+        this.anData.alertMsgShowF(result.msg);
+      })
   }
   openKaiGui(res:any) { 
     this.anHttp.get('https://uatapi.iqcspace.com/api-client/front/equipment/v2/actuator/' + res.id + '/501?waitForResponse=false', {})
